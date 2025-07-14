@@ -24,7 +24,7 @@ echo "which allow the access to github and other stuff ;)"
 echo
 echo "PRESS ENTER TO CONTINUE"
 read -r
-ssh-add -K
+ssh-add --apple-use-keychain --apple-load-keychain
 
 # Install homebrew
 if ! which brew; then
